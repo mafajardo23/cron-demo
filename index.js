@@ -5,7 +5,7 @@ console.log(greeting);
 var CronJob = require('cron').CronJob;
 // create a new instance
 var job = new CronJob(
-	'5 0 * 8 *',
+	'10 * * * *',
 	function() {
 		console.log('The local time is: '+ new Date().toLocaleString());
 	},
